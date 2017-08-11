@@ -26,6 +26,8 @@ class ViewController: UIViewController {
 
     @IBAction func sendButtonPressed(_ sender: Any) {
         
+        performSegue(withIdentifier: "sendDataForwards", sender: self)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
