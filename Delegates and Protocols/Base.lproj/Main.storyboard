@@ -35,7 +35,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <segue destination="0fk-Ih-w8I" kind="show" id="WdF-61-T1K"/>
+                                    <segue destination="0fk-Ih-w8I" kind="show" identifier="sendDataForwards" id="WdF-61-T1K"/>
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wok-RM-MsK">
@@ -50,10 +50,17 @@
                                 <state key="normal" title="Beam me up Scotty!">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ie7-B5-8tA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="lable" destination="FG1-2j-gWI" id="ntF-x8-SgM"/>
+                        <outlet property="textField" destination="5t1-y6-r1a" id="gnx-Qg-SM6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,10 +104,17 @@
                                 <state key="normal" title="Pass it back">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendDataBack:" destination="0fk-Ih-w8I" eventType="touchUpInside" id="uOJ-0m-aHO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="5zq-41-GI0" id="dQf-y7-O6R"/>
+                        <outlet property="textField" destination="2Qh-A0-f58" id="9z5-ox-Kb6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JNs-cC-Lz4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
